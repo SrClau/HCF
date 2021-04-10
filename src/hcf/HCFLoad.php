@@ -47,6 +47,10 @@ public $sotw;
 
 public $eotw;
 
+public function onLoad(): void {
+
+}
+
 public function onEnable(){
 self::$instance = $this;
 @mkdir($this->getDataFolder());
@@ -77,6 +81,7 @@ $version = $config->getNested("version");
 if($version !== self::PLUGIN_VERSION){
 $config->setNested("version", self::PLUGIN_VERSION);
    }
+$this->getScheduler()->scheduleRepeatingTask(new MOTDTask($this, $config->get("server-name"), $config->get("message-motd")), 3600);
 }
 
 public function isSOTW(): bool {
