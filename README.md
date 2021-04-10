@@ -1,3 +1,6 @@
 <p light="center">
-<img src="images/icon.png"/>
+<img src="resources/images/icon.png"/>
 </p>
+
+# Avise
+**STICK**
