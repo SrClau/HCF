@@ -81,6 +81,7 @@ $version = $config->getNested("version");
 if($version !== self::PLUGIN_VERSION){
 $config->setNested("version", self::PLUGIN_VERSION);
    }
+$this->getServer()->getPluginManager()->registerEvents(new HCFListener($this), $this);
 $this->getScheduler()->scheduleRepeatingTask(new MOTDTask($this, $config->get("server-name"), $config->get("message-motd")), 3600);
 }
 
