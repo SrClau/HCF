@@ -15,7 +15,17 @@ use pocketmine\nbt\NBT;
 use pocketmine\nbt\tag\{StringTag, ListTag};
 
 use pocketmine\network\mcpe\protocol\LevelSoundEventPacket;
+
 class LogoutZombie extends Zombie {
 
+public $nombre = "";
+
+
+public $timeLeft = 0;
+
+public function initEntity(): void {
+parent::initEntity();
+$this->setMaxHealth(200);
+}
 }
 ?>
