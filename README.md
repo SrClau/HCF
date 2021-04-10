@@ -2,7 +2,7 @@
   <img src="resources/images/icon.png" />
 </p>
 
-# Avise
+# Notice
 **STICK**
 
 # Why created?
