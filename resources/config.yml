@@ -1,1 +1,11 @@
+# Name of your server
+server-name: "MyServer"
+# Description of your server
+server-description: "server from hcf ._."
 
+# Discord
+webhook-url: ""
+webhook-check: false
+
+# GUI
+gui-enabled: true
