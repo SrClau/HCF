@@ -5,6 +5,9 @@
 # Avise
 **STICK**
 
+# Why created?
+
+
 ## Implements
 - [ ] SOTW
 - [ ] EOTW
@@ -26,3 +29,8 @@
 
 
 ### Credits
+*[SrClau](https://github.com/SrClau)*
+- [Twitter](https://twitter.com/SrClau4)
+- [YouTube](https://xvideos.com)
+- [Minecraft](https://localhost:7700/index.html)
+- [Discord]()
