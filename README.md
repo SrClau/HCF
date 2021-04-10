@@ -1,2 +1,3 @@
-# HCF
-HCF Plugin for PocketMine-MP
+<p light="center">
+<img src="images/icon.png"/>
+</p>
