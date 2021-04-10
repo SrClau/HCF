@@ -9,8 +9,8 @@
 
 
 ## Implements
-- [✔] SOTW
-- [✔] EOTW
+- [ ✔ ] SOTW
+- [ ✔ ] EOTW
 - [ ] KOTH
 - [ ] Crates
 - [ ] Kits
