@@ -84,8 +84,20 @@ $config->setNested("version", self::PLUGIN_VERSION);
 $this->getScheduler()->scheduleRepeatingTask(new MOTDTask($this, $config->get("server-name"), $config->get("message-motd")), 3600);
 }
 
-public function isSOTW(): bool {
-  
+public function setEOTW(bool $value = false){
+$this->eotw = $value;
+}
+
+public function getEOTW(): bool {
+return $this->eotw;  
+}
+
+public function getTimeSOTW(): int {
+return $this->sotw; 
+}
+
+public function setTimeSOTW(){
+$this->sotw = time();
 }
 }
 ?>
