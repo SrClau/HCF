@@ -35,7 +35,14 @@ $menu->readonly();
 $menu->setName("§bMenuStaff §7HCF");
 $menu->getInventory()->setItem();
 $menu->setListener(function(PlayerHCF $player, Item $itemTakeOut, Item $itemPutIn, SlotChangeAction $slotAction): bool {
-  
+if($itemTakeOut->getCustomName() === Text::AQUA . "STAFF" . " " . Text::GREEN . "Enable"){
+$player->sendStaffMode();
+$player->removeWindow($change->getInventory());
+}
+if($itemTakeOut->getCustomName() === Text::AQUA . "STAFF" . " " . Text::RED . "Disable"){
+$player->exitStaffMode();
+$player->removeWindow($change->getInventory());
+}
 });
 $menu->send($sender);
 return;
