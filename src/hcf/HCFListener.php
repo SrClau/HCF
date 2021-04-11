@@ -38,9 +38,11 @@ public function kbPlayer(EntityDamageByEntityEvent $event){
 $damage = $event->getDamager();
 $entity = $event->getEntity();
 if($damage instanceof PlayerHCF && $entity instanceof PlayerHCF){
+  if(!$event->isCancelled()){
 $event->setKnockBack(0.50);
 $event->setCancelled(false);
 return;
+            }
       }
 }
 
