@@ -2,6 +2,8 @@
 server-name: "MyServer"
 # Description of your server
 server-description: "server from hcf ._."
+# Color server
+server-color: "§6"
 
 # Discord
 webhook-url: ""
@@ -21,7 +23,7 @@ cooldown:
 
 # Special Items
 special-items:
- Ninja:
+ BowSpider:
   name: ""
   lores: ""
 
@@ -31,6 +33,7 @@ factions:
 commands-cooldown:
  report: 45
  logout: 30
-
+ report: 50 
+ 
 blocked-items: []
 blocked-blocks: []
