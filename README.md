@@ -9,8 +9,8 @@
 The objective of creating this plugin was for the use or recreation of it, and especially created for the PMMP community
 
 ## Implements
-- [ ✔ ] SOTW
-- [ ✔ ] EOTW
+- [ ] SOTW
+- [ ] EOTW
 - [ ] KOTH
 - [ ] Crates
 - [ ] Kits
