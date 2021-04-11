@@ -40,6 +40,7 @@ $entity = $event->getEntity();
 if($player->getLevel()->getFolderName() === $this->hcf->getServer()->getDefaultLevel()->getName() & $entity->getLevel()->getFolderName() === $this->hcf->getDefaultLevel()->getName()){
 if($damage instanceof PlayerHCF && $entity instanceof PlayerHCF){
 $event->setKnockBack(0.50);
+$event->setCancelled(false);
 return;
       }
    }
