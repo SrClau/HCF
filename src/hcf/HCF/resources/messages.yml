@@ -9,7 +9,7 @@ usageMessage: "Usa: %usage%"
 addMoney: "Agregaste %amount% al dinero de %name% correctamente"
 myMoney: "Tienes %amount% de dinero"
 otherMoney: "%name% Dinero: %amount%"
-subtractMoney: "Has sacado %amount% del jugador %name% correctamente"
+subtractMoney: "Has sacado %amount% de dinero, del jugador %name% correctamente"
 
 # DAMAGE / DEATH
 death-broadcast: "%name% died"
