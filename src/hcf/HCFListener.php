@@ -37,13 +37,11 @@ $event->setPlayerClass(PlayerHCF::class);
 public function kbPlayer(EntityDamageByEntityEvent $event){
 $damage = $event->getDamager();
 $entity = $event->getEntity();
-if($player->getLevel()->getFolderName() === $this->hcf->getServer()->getDefaultLevel()->getName() & $entity->getLevel()->getFolderName() === $this->hcf->getDefaultLevel()->getName()){
 if($damage instanceof PlayerHCF && $entity instanceof PlayerHCF){
 $event->setKnockBack(0.50);
 $event->setCancelled(false);
 return;
       }
-   }
 }
 
 public function signChange(SignChangeEvent $event){
