@@ -34,6 +34,17 @@ public function creationPlayer(PlayerCreationEvent $event){
 $event->setPlayerClass(PlayerHCF::class);
 }
 
+public function kbPlayer(EntityDamageByEntityEvent $event){
+$damage = $event->getDamager();
+$entity = $event->getEntity();
+if($player->getLevel()->getFolderName() === $this->hcf->getServer()->getDefaultLevel()->getName() & $entity->getLevel()->getFolderName() === $this->hcf->getDefaultLevel()->getName()){
+if($damage instanceof PlayerHCF && $entity instanceof PlayerHCF){
+$event->setKnockBack(0.50);
+return;
+      }
+   }
+}
+
 public function signChange(SignChangeEvent $event){
 $lines = $event->getLines();
 if($lines[0] === "[elevator]"){
