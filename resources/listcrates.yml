@@ -1,1 +1,4 @@
-
+# Keys available to configure (name and lore)
+Exodus:
+  name: "§c§lExodus §rCrate"
+  id: 4:0
