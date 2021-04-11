@@ -8,6 +8,12 @@ use pocketmine\entity\Entity;
 
 use pocketmine\utils\{Config,TextFormat as Text};
 
+use hcf\HCFListener;
+
+use hcf\tasks\MOTDTask;
+
+use muqsit\invmenu\InvMenuHandler;
+
 class HCFLoad extends PluginBase {
 
 public const GAME_MODE = "HardcoreFactions"; //change to your liking
@@ -58,6 +64,9 @@ self::$instance = $this;
 @mkdir($this->getDataFolder() . "players/");
 @mkdir($this->getDataFolder() . "signs/");
 @mkdir($this->getDataFolder() . "data/");
+if(!InvMenuHandler::isRegistered()) {
+InvMenuHandler::register($this);
+}
 if(!is_file($this->getDataFolder() . "config.yml")){
 $this->saveResource("config.yml");
 }
