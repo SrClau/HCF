@@ -1,5 +1,11 @@
+//?
 {
  "optimization": [
-
+   {
+   "enabled": true,
+   "max_tps": 20,
+  // 0 and 100 :D
+   "speed-max": 100 
+   }
   ]
 }
