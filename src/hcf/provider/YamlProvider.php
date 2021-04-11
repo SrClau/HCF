@@ -18,8 +18,10 @@ $this->init();
 
 public function init(): void {
 if(!is_dir($this->load->getDataFolder() . "crates/")){
-  
-}
-}
+@mkdir($this->load->getDataFolder() . "crates/"); 
+}elseif(!is_dir($this->load->getDataFolder() . "players/")){
+@mkdir($this->load->getDataFolder() . "players/");
+        }
+    }
 }
 ?>
