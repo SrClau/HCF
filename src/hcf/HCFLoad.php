@@ -87,7 +87,7 @@ self::$yaml = new YamlProvider($this);
 
 $config = $this->getConfig();
 $version = $config->getNested("version");
-if($version !== self::PLUGIN_VERSION){
+if($version !== self::PLUGIN_VERSION && self::PLUGIN_VERSION != $this->getDescription()->getVersion()){
 $config->setNested("version", self::PLUGIN_VERSION);
 $this->getServer()->getPluginManager()->disablePlugin($this);
 }
