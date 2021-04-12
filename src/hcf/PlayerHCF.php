@@ -4,6 +4,8 @@ namespace hcf;
 
 use pocketmine\Player;
 
+use pocketmine\utils\{Config,TextFormat as Text};
+
 class PlayerHCF extends Player {
 
 public const PUBLIC_CHAT = 0;
