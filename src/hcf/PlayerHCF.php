@@ -115,7 +115,7 @@ $randomTeleportTag->setString("staffmode", "randomTeleport");
 $randomTeleport->setNameTag($randomTeleportTag);
 
 $vanish = Item::get(351, 10, 1);
-$vanish->setCustomName();
+$vanish->setCustomName(Text::GREEN . "Vanish" . "\n" . Text::GRAY . "Click Left to hide or show");
 $vanishTag = $vanish->getNameTag();
 $vanishTag->setString("staffmode", "vanishItem");
 $vanish->setNameTag($vanishTag);
