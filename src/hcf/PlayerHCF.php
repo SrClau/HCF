@@ -92,6 +92,8 @@ public function sendStaffMode(): void {
 foreach($this->getInventory()->getContents() as $item){
   $this->setItems($item);
 }
+$this->getInventory()->clearAll(true);
+$this->getArmorInventory()->clearAll(true);
 $this->removeAllEffects();
 $this->setGamemode(0);
 $this->setAllowFlight(true);
