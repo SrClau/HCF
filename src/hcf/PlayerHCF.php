@@ -8,7 +8,7 @@ use pocketmine\Player;
 
 use pocketmine\item\Item;
 
-use pocketmine\nbt\tag\{IntTag,StringTag};
+use pocketmine\nbt\tag\{CompoundTag,IntTag,StringTag};
 
 use pocketmine\utils\{Config,TextFormat as Text};
 
@@ -103,7 +103,9 @@ $this->setGamemode(0);
 $this->setAllowFlight(true);
 $this->setFlying(true);
 $freezeId = Item::get(Item::FROSTED_ICE, 0, 1);
-$freezeId->setCustomName(Text::AQUA . "Freeze Player" . "\n" . Text::GRAY . "Right click to freeze the player, Left click to see the frozen status of the player (not added)");
+$freezeId->setCustomName(Text::AQUA . "Freeze Player"); 
+
+$freezeId->setLore([Text::GRAY . "Right click to freeze the player, Left click to see the frozen status of the player (not added)"]);
 $freeezeTag = $freezeId->getNameTag();
 $freeezeTag->setString("staffmode", "freezeItem");
 $freezeId->setNameTag($freeezeTag);
