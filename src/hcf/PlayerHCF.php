@@ -6,6 +6,10 @@ use hcf\HCFLoad;
 
 use pocketmine\Player;
 
+use pocketmine\item\Item;
+
+use pocketmine\nbt\tag\{IntTag,StringTag};
+
 use pocketmine\utils\{Config,TextFormat as Text};
 
 class PlayerHCF extends Player {
@@ -98,7 +102,8 @@ $this->removeAllEffects();
 $this->setGamemode(0);
 $this->setAllowFlight(true);
 $this->setFlying(true);
-$freezeId = Item::get(Item::FORSTED_ICE, 0, 1);
+$freezeId = Item::get(Item::FROSTED_ICE, 0, 1);
+$freezeId->setCustomName(Text::AQUA . "Freeze Player" . "\n" . Text::GRAY . "")
 $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
 $this->setStaffMode(true);
 }
