@@ -89,8 +89,8 @@ return $this->staff["enabled"];
 }
 
 public function sendStaffMode(): void {
-foreach($this->getInventory()->getContets() as $item){
-$this->setItems($item);
+foreach($this->getInventory()->getContents() as $item){
+  $this->setItems($item);
 }
 $this->removeAllEffects();
 $this->setGamemode(0);
