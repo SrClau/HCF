@@ -2,6 +2,8 @@
 
 namespace hcf;
 
+use hcf\HCFLoad;
+
 use pocketmine\Player;
 
 use pocketmine\utils\{Config,TextFormat as Text};
@@ -98,9 +100,14 @@ $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
 public function notSendStaffMode(): void {
 $this->getInventory()->clearAll(true);
 $this->getArmorInventory()->clearAll(true);
+
+$this->inventory = [];
 $this->setGamemode(0);
 $this->setAllowFlight(false);
 $this->setFlying(false);
-
+foreach(HCFLoad::getInstance()->getServer()->getOnlinePlayers() as $player){
+$player->showPlayer($this);
+}
+$this->setStaffMode(false);
 }
 }
