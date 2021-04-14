@@ -96,6 +96,11 @@ $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
 }
 
 public function notSendStaffMode(): void {
+$this->getInventory()->clearAll(true);
+$this->getArmorInventory()->clearAll(true);
+$this->setGamemode(0);
+$this->setAllowFlight(false);
+$this->setFlying(false);
 
 }
 }
