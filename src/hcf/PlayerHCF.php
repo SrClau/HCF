@@ -84,6 +84,23 @@ break;
      }
 }
  
+public function setItems($item){
+$this->inventory[] = $item;
+}
+
+public function getItems(): array {
+return (array)$this->inventory;  
+}
+
+public function setHelmet($item){
+$this->armorInventory["helmet"] = $item; 
+}
+
+public function setChestPlate($item){
+$this->armorInventory["chestplate"] = $item;
+}
+
+
 public function setStaffMode(bool $value = false): void {
 $this->staff["enabled"] = $value;
 }
