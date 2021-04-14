@@ -106,6 +106,17 @@ $freezeId = Item::get(Item::FROSTED_ICE, 0, 1);
 $freezeId->setCustomName(Text::AQUA . "Freeze Player" . "\n" . Text::GRAY . "Right click to freeze the player, Left click to see the frozen status of the player (not added)");
 $freeezeTag = $freezeId->getNameTag();
 $freeezeTag->setString("staffmode", "freezeItem");
+$freezeId->setNameTag($freeezeTag);
+
+$randomTeleport = Item::get(Item::COMPASS, 0, 1);
+$randomTeleport->setCustomName();
+$randomTeleportTag = $randomTeleport->getNameTag();
+$randomTeleportTag->setString("staffmode", "randomTeleport");
+$randomTeleport->setNameTag($randomTeleportTag);
+$vanish = Item::get(351, 10, 1);
+
+$seeInventory = Item::get(Item::BOOK, 0, 1);
+
 $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
 $this->setStaffMode(true);
 }
