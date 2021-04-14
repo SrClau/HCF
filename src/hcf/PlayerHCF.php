@@ -105,7 +105,7 @@ $this->setFlying(true);
 $freezeId = Item::get(Item::FROSTED_ICE, 0, 1);
 $freezeId->setCustomName(Text::AQUA . "Freeze Player" . "\n" . Text::GRAY . "Right click to freeze the player, Left click to see the frozen status of the player (not added)");
 $freeezeTag = $freezeId->getNameTag();
-$freeezeTag->setString("staffmode", "freeze")
+$freeezeTag->setString("staffmode", "freeze");
 $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
 $this->setStaffMode(true);
 }
