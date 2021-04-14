@@ -89,12 +89,15 @@ return $this->staff["enabled"];
 }
 
 public function sendStaffMode(): void {
-
+foreach($this->getInventory()->getContets() as $item){
+$this->setItems($item);
+}
 $this->removeAllEffects();
 $this->setGamemode(0);
 $this->setAllowFlight(true);
 $this->setFlying(true);
 $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
+$this->setStaffMode(true);
 }
 
 public function notSendStaffMode(): void {
