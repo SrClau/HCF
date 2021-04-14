@@ -100,6 +100,29 @@ public function setChestPlate($item){
 $this->armorInventory["chestplate"] = $item;
 }
 
+public function setLeggings($item){
+$this->armorInventory["leggings"] = $item;
+}
+
+public function setBoots($item){
+$this->armorInventory["boots"] = $item; 
+}
+
+public function getHelmet(){
+  
+}
+
+public function getChestPlate(){
+
+}
+
+public function getLeggings(){
+  
+}
+
+public function getBoots(){
+  
+}
 
 public function setStaffMode(bool $value = false): void {
 $this->staff["enabled"] = $value;
