@@ -113,7 +113,12 @@ $randomTeleport->setCustomName();
 $randomTeleportTag = $randomTeleport->getNameTag();
 $randomTeleportTag->setString("staffmode", "randomTeleport");
 $randomTeleport->setNameTag($randomTeleportTag);
+
 $vanish = Item::get(351, 10, 1);
+$vanish->setCustomName();
+$vanishTag = $vanish->getNameTag();
+$vanishTag->setString("staffmode", "vanishItem");
+$vanish->setNameTag($vanishTag);
 
 $seeInventory = Item::get(Item::BOOK, 0, 1);
 
