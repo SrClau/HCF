@@ -36,6 +36,7 @@ public $chat = self::PUBLIC;
 /** @here Scoreboard **/
 public $scoreboard;
 
+/** @var Array[] String **/
 public $permissions = [];
 
 /** @var Array[] Item **/
