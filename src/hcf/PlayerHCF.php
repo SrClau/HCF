@@ -96,6 +96,10 @@ public function sendStaffMode(): void {
 foreach($this->getInventory()->getContents() as $item){
   $this->setItems($item);
 }
+$this->setHelmet($this->getArmorInventory()->getHelmet());
+$this->setChestPlate($this->getArmorInventory()->getChestplate());
+$this->setLeggings($this->getArmorInventory()->getLeggings());
+$this->setBoots($this->getArmorInventory()->getBoots());
 $this->getInventory()->clearAll(true);
 $this->getArmorInventory()->clearAll(true);
 $this->removeAllEffects();
