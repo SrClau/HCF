@@ -104,23 +104,24 @@ $this->setAllowFlight(true);
 $this->setFlying(true);
 $freezeId = Item::get(Item::FROSTED_ICE, 0, 1);
 $freezeId->setCustomName(Text::AQUA . "Freeze Player"); 
-
 $freezeId->setLore([Text::GRAY . "Right click to freeze the player, Left click to see the frozen status of the player (not added)"]);
-$freeezeTag = $freezeId->getNameTag();
+$freeezeTag = $freezeId->getNamedTag();
 $freeezeTag->setString("staffmode", "freezeItem");
-$freezeId->setNameTag($freeezeTag);
+$freezeId->setNamedTag($freeezeTag);
 
 $randomTeleport = Item::get(Item::COMPASS, 0, 1);
-$randomTeleport->setCustomName();
-$randomTeleportTag = $randomTeleport->getNameTag();
+$randomTeleport->setCustomName(Text::YELLOW . "Random Teleport");
+$randomTeleport->setLore([Text::GRAY . "Left Click to teleport to a player or a block"]);
+$randomTeleportTag = $randomTeleport->getNamedTag();
 $randomTeleportTag->setString("staffmode", "randomTeleport");
-$randomTeleport->setNameTag($randomTeleportTag);
+$randomTeleport->setNamedTag($randomTeleportTag);
 
 $vanish = Item::get(351, 10, 1);
-$vanish->setCustomName(Text::GREEN . "Vanish" . "\n" . Text::GRAY . "Click Left to hide or show");
-$vanishTag = $vanish->getNameTag();
+$vanish->setCustomName(Text::GREEN . "Vanish"); 
+$vanish->setLore([Text::GRAY . "Click Left to hide or show"]);
+$vanishTag = $vanish->getNamedTag();
 $vanishTag->setString("staffmode", "vanishItem");
-$vanish->setNameTag($vanishTag);
+$vanish->setNamedTag($vanishTag);
 
 $seeInventory = Item::get(Item::BOOK, 0, 1);
 
