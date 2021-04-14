@@ -38,6 +38,12 @@ public $scoreboard;
 
 public $permissions = [];
 
+/** @var Array[] Item **/
+public $inventory = [];
+
+/** @var Array[] Item **/
+public $armorInventory = [];
+
 public $faction;
 
 public $factionRole;
