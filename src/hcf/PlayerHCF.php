@@ -84,7 +84,7 @@ break;
      }
 }
  
-public function setItems($item){
+public function setItems(Item $item){
 $this->inventory[] = $item;
 }
 
@@ -92,36 +92,36 @@ public function getItems(): array {
 return (array)$this->inventory;  
 }
 
-public function setHelmet($item){
+public function setHelmet(Item $item){
 $this->armorInventory["helmet"] = $item; 
 }
 
-public function setChestPlate($item){
+public function setChestPlate(Item $item){
 $this->armorInventory["chestplate"] = $item;
 }
 
-public function setLeggings($item){
+public function setLeggings(Item $item){
 $this->armorInventory["leggings"] = $item;
 }
 
-public function setBoots($item){
+public function setBoots(Item $item){
 $this->armorInventory["boots"] = $item; 
 }
 
-public function getHelmet(){
-  
+public function getHelmet(): Item {
+return $this->armorInventory["helmet"]; 
 }
 
-public function getChestPlate(){
-
+public function getChestPlate(): Item {
+return $this->armorInventory["chestplate"];
 }
 
-public function getLeggings(){
-  
+public function getLeggings(): Item {
+return $this->armorInventory["leggings"];  
 }
 
-public function getBoots(){
-  
+public function getBoots(): Item {
+return $this->armorInventory["boots"];  
 }
 
 public function setStaffMode(bool $value = false): void {
