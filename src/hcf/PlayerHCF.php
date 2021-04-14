@@ -124,7 +124,17 @@ $vanishTag->setString("staffmode", "vanishItem");
 $vanish->setNamedTag($vanishTag);
 
 $seeInventory = Item::get(Item::BOOK, 0, 1);
+$seeInventory->setCustomName(Text::GOLD . "SeeInventory Player");
+$seeInventory->setLore([Text::GRAY . ""]);
+$seeInventoryTag = $seeInventory->getNamedTag();
+$seeInventoryTag->setString("staffmode", "seeInventory");
+$seeInventory->setNamedTag($seeInventoryTag);
 
+$this->getInventory()->setItem(0, $vanish);
+$this->getInventory()->setItem(2, $randomTeleport);
+//$this->getInventory()->setItem(4, $configuration);
+$this->getInventory()->setItem(6, $freezeId);
+$this->getInventory()->setItem(8, $seeInventory);
 $this->addTitle(Text::AQUA . "STAFFMODE", Text::GREEN . "Enabled");
 $this->setStaffMode(true);
 }
