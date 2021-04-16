@@ -18,6 +18,7 @@ $command->register("staffmode", new StaffModeCommand($instance));
 $command->register("test", new Test($this)) ;
 /** Stats **/
 $command->register("stats", new StatsCommand($this));
-
+/** Repair **/
+$command->register("repair", new RepairCommand($this));
 }
 }
