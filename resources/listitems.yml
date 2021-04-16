@@ -1,4 +1,4 @@
-
+# Items 
 EnderPearl:
   name: "LegendEnderPearl"
   name-item: "§6LegendEnderPearl"
@@ -11,3 +11,7 @@ AntiTrapper:
   name: "ENDTrapper"
   name-item: "§cEND§1AntuTrapper"
   lore: "c"
+BowSpider:
+  name: "BowSpider"
+  name-item: "§4Bow§fSpider"
+  lore: "d"
