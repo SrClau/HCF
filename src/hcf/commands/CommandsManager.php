@@ -20,5 +20,7 @@ $command->register("test", new Test($this)) ;
 $command->register("stats", new StatsCommand($this));
 /** Repair **/
 $command->register("repair", new RepairCommand($this));
+/** Kits (JavaUI,BedrockUI) **/ 
+$command->register("kits", new KitsCommand($this));
 }
 }
