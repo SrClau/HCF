@@ -53,7 +53,7 @@ public $armorInventory = [];
 
 public $faction;
 
-public $factionRole;
+/*public $factionRole;*/
 
 public $kills = 0;
 public $deaths = 0;
