@@ -24,6 +24,9 @@ createFaction: "La faction %faction_name% ha sido creada correctamente"
 maxPlayersFaction: "La faction %faction_name% alcanzo el maximo de jugadores en una faction!"
 joinFaction: "%name% se unio a la faction."
 leaveFaction: "%name% se ha ido de la faction"
+maxAlliesFaction: "La %faction_name% alcanzo el maximo de alianzas de una faction."
+depositFaction: "Has depositado $%amount% en la faction %faction_name%"
+
 # OTHER  
 broadcastMessage: "%broadcast%"
 foundDiamond: "%name% encontro %amount% de Diamantes."
