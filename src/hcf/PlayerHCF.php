@@ -35,8 +35,10 @@ public $invites = [];
 
 public $logout = false;
 
+/** @var bool $reclaim **/
 public $reclaim = false;
-  
+
+/** @var int $chat **/
 public $chat = self::PUBLIC;
 
 /** @here Scoreboard **/
@@ -51,13 +53,14 @@ public $inventory = [];
 /** @var Array[] Item **/
 public $armorInventory = [];
 
+/** @var Faction **/
 public $faction;
 
-/*public $factionRole;*/
-
+/** @var Int $kills and $deaths **/
 public $kills = 0;
 public $deaths = 0;
 
+/** @var Int $kits and $cooldown **/
 public $kits = ["StarterKit" => 0, "DiamondKit" => 0, "RogueKit" => 0, "BardKit" => 0];
 public $cooldown = ["EnderPearl" => 0];
 
