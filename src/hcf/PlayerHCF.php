@@ -77,6 +77,10 @@ public function getLogout(): bool {
 return $this->logout ?? null;
 }
 
+/**
+* @param String $name (config.yml)
+* @return Integee
+**/
 public function getCooldown(string $name): int {
 switch($name){
 case "EnderPearl":
