@@ -85,6 +85,15 @@ break;
      }
 }
  
+/** 
+* @function setCooldown
+* @param String $name (config.yml)
+* @param Int $cooldown (config.yml)
+**/
+public function setCooldown(string $name, int $cooldown){
+$this->cooldown[$name] = $cooldown;
+}
+
 public function setItems(Item $item){
 $this->inventory[] = $item;
 }
