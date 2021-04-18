@@ -26,7 +26,7 @@ The objective of creating this plugin was for the use or recreation of it, and e
 - [ ] Shop
 
 ## Tutorial
-<a href="">
+<a href="https://youtu.be/R0lqowYD_Tg">
 How to install the plugin
 </a>
 
