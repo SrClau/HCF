@@ -12,11 +12,13 @@ use pocketmine\level\{Level,Position};
 
 use pocketmine\math\Vector3;
 
-use pocketmine\tile\Sign;
+use pocketmine\tile\{Tile,Sign};
 
 use pocketmine\item\Item;
 
 use pocketmine\event\block\{SignChangeEvent,BlockBreakEvent};
+
+use pocketmine\block\Block;
 
 use pocketmine\{Player};
 
