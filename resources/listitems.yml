@@ -15,3 +15,7 @@ BowSpider:
   name: "BowSpider"
   name-item: "§4Bow§fSpider"
   lore: "d"
+GrapplingHook:
+  name: "GrapplingHook"
+  name-item: "§eGrappling§9Hook"
+  lore: "e"
