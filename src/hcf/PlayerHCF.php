@@ -8,7 +8,7 @@ use pocketmine\Player;
 
 use pocketmine\item\Item;
 
-use pocketmine\nbt\tag\{CompoundTag,IntTag,StringTag};
+use pocketmine\nbt\tag\{CompoundTag,ListTag,IntTag,StringTag};
 
 use pocketmine\utils\{Config,TextFormat as Text};
 
@@ -58,6 +58,7 @@ public $factionRole;
 public $kills = 0;
 public $deaths = 0;
 
+public $kits = ["StarterKit" => 0, "DiamondKit" => 0, "RogueKit" => 0, "BardKit" => 0];
 public $cooldown = ["EnderPearl" => 0];
 
 public function addKill(int $amount):void{
