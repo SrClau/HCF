@@ -36,7 +36,7 @@ factions:
 commands-cooldown:
  report: 45
  logout: 30
- #report: 50 
+ #f-stuck: 50 
  
 blocked-items: []
 blocked-blocks: []
