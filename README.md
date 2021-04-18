@@ -31,6 +31,6 @@ The objective of creating this plugin was for the use or recreation of it, and e
 ### Credits
 *[SrClau](https://github.com/SrClau)*
 - [Twitter](https://twitter.com/SrClau4)
-- [YouTube](https://xvideos.com)
+- [YouTube](https://youtube.com/channel/UCZzLLq57NzEe1ckqRdUbZzA)
 - [Minecraft](https://localhost:7700/index.html)
-- [Discord]()
+- [Discord](https://discord)
