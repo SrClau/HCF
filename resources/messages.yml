@@ -24,3 +24,5 @@ notFaction: "No existe una faction llamada: %faction_name%"
 # OTHER  
 broadcastMessage: "%broadcast%"
 foundDiamond: "%name% encontro %amount% de Diamantes."
+reachedBorder: "You've reached the border!"
+inventoryFull: "Inventory is full!"
