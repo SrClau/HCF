@@ -5,6 +5,9 @@ server-description: "server from hcf ._."
 # Color server
 server-color: "§6"
 
+# Spawn
+border-limit: 1000
+
 # Discord
 webhook-url: ""
 webhook-check: false
