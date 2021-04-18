@@ -9,9 +9,9 @@
 The objective of creating this plugin was for the use or recreation of it, and especially created for the PMMP community
 
 ## Implements
-- [ ] SOTW
-- [ ] EOTW
-- [ ] KOTH
+- [ ] SOTW (Start of the world)
+- [ ] EOTW (End of the world)
+- [ ] KOTH 
 - [ ] Crates
 - [ ] Kits
 - [ ] Cooldown
