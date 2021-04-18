@@ -26,7 +26,9 @@ The objective of creating this plugin was for the use or recreation of it, and e
 - [ ] Shop
 
 ## Tutorial
-
+<a href="">
+How to install the plugin
+</a>
 
 ### Credits
 *[SrClau](https://github.com/SrClau)*
