@@ -4,5 +4,5 @@
 
 # License
 
-This plugin is licensed [GPL-3](https://hajajs.com)
+This plugin is licensed [GPL-3.0](LICENSE)
 so the developers of this plugin will be able to see its code
