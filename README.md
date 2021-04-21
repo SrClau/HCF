@@ -3,7 +3,7 @@
 </p>
 
 # Notice
-**STICK**
+This add-on is under development, if you want to test the add-on it is at you disposal  see crashes, instabilities, addictions malfunction, etc.
 
 # Why created?
 The objective of creating this plugin was for the use or recreation of it, and especially created for the PMMP community
