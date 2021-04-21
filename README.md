@@ -11,7 +11,7 @@ The objective of creating this plugin was for the use or recreation of it, and e
 ## Implements
 - [ ] SOTW (Start of the world)
 - [ ] EOTW (End of the world)
-- [ ] KOTH 
+- [ ] KOTH (King of the hill)
 - [ ] Crates
 - [ ] Kits
 - [ ] Cooldown
