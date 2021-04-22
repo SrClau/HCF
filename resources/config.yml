@@ -40,5 +40,5 @@ commands-cooldown:
  logout: 30
  #f-stuck: 50 
  
-blocked-items: []
+blocked-items: [45:0]
 blocked-blocks: []
