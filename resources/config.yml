@@ -11,8 +11,8 @@ server-map: "1"
 border-limit: 1000
 
 # Discord
-webhook-url: ""
-webhook-check: false
+#webhook-url: ""
+#webhook-check: false
 
 # GUI
 gui-enabled: true
