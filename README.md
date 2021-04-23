@@ -2,6 +2,9 @@
   <img src="resources/images/icon.png" />
 </p>
 
+# API
+PocketMine-MP 4.0.0
+
 # Notice
 This add-on is under development, if you want to test the add-on it is at you disposal  see crashes, instabilities, addictions malfunction, etc.
 
