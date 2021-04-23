@@ -1,7 +1,7 @@
 name: HCF
-version: 0.1.5-beta
+version: 0.2.0-beta
 main: hcf\HCFLoad
-api: [3.0.0] #will change soon.
+api: 4.0.0  #change in pm4
 authors: [SrClauDev,iFail90,ClembArcadeZ]
 prefix: "HCF-Core"
 website: "play.server.com"
