@@ -2,7 +2,10 @@
 
 namespace hcf;
 
-use pocketmine\event\{Listener,player\PlayerJoinEvent,player\PlayerCreationEvent,player\PlayerPreLoginEvent,player\PlayerQuitEvent,player\PlayerMoveEvent,player\PlayerChatEvent,player\PlayerInteractEvent,player\PlayerDeathEvent};
+use pocketmine\event\{Listener,player\PlayerJoinEvent,player\PlayerCreationEvent,player\PlayerPreLoginEvent,player\PlayerQuitEvent,player\PlayerMoveEvent,player\PlayerChatEvent,player\PlayerInteractEvent,player\PlayerDeathEvent
+  ,block\BlockBreakEvent
+  ,block\SignChangeEvent
+};
 
 use pocketmine\utils\TextFormat as Text;
 
@@ -15,8 +18,6 @@ use pocketmine\math\Vector3;
 use pocketmine\tile\{Tile,Sign};
 
 use pocketmine\item\Item;
-
-use pocketmine\event\block\{SignChangeEvent,BlockBreakEvent};
 
 use pocketmine\block\Block;
 
@@ -46,6 +47,15 @@ $event->setCancelled(false);
 return;
             }
       }
+}
+
+public function moveEvent(PlayerMoveEvent $event){
+$player = $event->getPlayer();
+$level = $this->hcf->getServer()->getDefaultLevel();
+$position = new Vector3($level->getSafeSpawn()->getFloorX(), $level->getSafeSpawn()->getFloorY(), $level->getSafeSpawn()->getFloorZ());
+if($player->distanceSquared($position) >= $border){
+$player->sendMessage("Se fue del borde"); 
+  }
 }
 
 public function signChange(SignChangeEvent $event){
