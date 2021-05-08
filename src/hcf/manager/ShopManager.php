@@ -15,12 +15,16 @@ TextFormat as Text
 
 class ShopManager {
 
-private$hcf;
+private $hcf;
 
 public $shop;
 
 public function __construct(MythicalHCF $plugin){
 $this->hcf = $plugin;
-$this->shop = new Config($plugin->getDataFolder() . "", Config::);
+$this->shop = new Config($plugin->getDataFolder() . "listshop.yml", Config::YML);
+}
+
+public function createShop(){
+  
 }
 }
