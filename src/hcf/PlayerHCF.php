@@ -102,7 +102,7 @@ $this->cooldown[$name] = $cooldown;
 }
 
 public function setItems(Item $item){
-$this->inventoryitem[] = $item;
+$this->inventoryItem[] = $item;
 }
 
 public function getItems(): array {
@@ -114,31 +114,31 @@ $this->armorInventory["helmet"] = $item;
 }
 
 public function setChestPlate(Item $item){
-$this->armorInventory["chestplate"] = $item;
+$this->inventoryArmor["chestplate"] = $item;
 }
 
 public function setLeggings(Item $item){
-$this->armorInventory["leggings"] = $item;
+$this->inventoryArmor["leggings"] = $item;
 }
 
 public function setBoots(Item $item){
-$this->armorInventory["boots"] = $item; 
+$this->inventoryArmor["boots"] = $item; 
 }
 
 public function getHelmet(): Item {
-return $this->armorInventory["helmet"]; 
+return $this->inventoryArmor["helmet"]; 
 }
 
 public function getChestPlate(): Item {
-return $this->armorInventory["chestplate"];
+return $this->inventoryArmor["chestplate"];
 }
 
 public function getLeggings(): Item {
-return $this->armorInventory["leggings"];  
+return $this->inventoryArmor["leggings"];  
 }
 
 public function getBoots(): Item {
-return $this->armorInventory["boots"];  
+return $this->inventoryArmor["boots"];  
 }
 
 public function setStaffMode(bool $value = false): void {
