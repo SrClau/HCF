@@ -40,5 +40,5 @@ commands-cooldown:
  logout: 30
  #f-stuck: 50 
  
-blocked-items: [45:0]
-blocked-blocks: []
+#blocked-items: [45:0]
+blocked-blocks: [45:0] //Added id and meta from item :)
