@@ -110,7 +110,7 @@ return (array)$this->inventoryItem;
 }
 
 public function setHelmet(Item $item){
-$this->armorInventory["helmet"] = $item; 
+$this->inventoryArmor["helmet"] = $item; 
 }
 
 public function setChestPlate(Item $item){
