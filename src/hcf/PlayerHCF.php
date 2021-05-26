@@ -48,10 +48,10 @@ public $scoreboard;
 public $permissions = [];
 
 /** @var Array[] Item **/
-public $inventory = [];
+public $inventoryItem = [];
 
 /** @var Array[] Item **/
-public $armorInventory = [];
+public $inventoryArmor = [];
 
 /** @var Faction **/
 public $faction;
@@ -102,11 +102,11 @@ $this->cooldown[$name] = $cooldown;
 }
 
 public function setItems(Item $item){
-$this->inventory[] = $item;
+$this->inventoryitem[] = $item;
 }
 
 public function getItems(): array {
-return (array)$this->inventory;  
+return (array)$this->inventoryItem;  
 }
 
 public function setHelmet(Item $item){
