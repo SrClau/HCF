@@ -37,3 +37,6 @@ How to install the plugin
 - [YouTube](https://youtube.com/channel/UCZzLLq57NzEe1ckqRdUbZzA)
 - [Minecraft](https://localhost:7700/index.html)
 - [Discord](https://discord)
+*[iDev90G](https://github.com/iDev90G)*
+- [Twitter](https://twitter.com/iFail90G)
+- [Discord](https://dsc.gg/noobymc)
