@@ -30,7 +30,7 @@ public const MAX_POWER = 1; //change to your liking
 
 public const MAX_ALLYS = 3; //change to your liking
 
-public const LEVEL_MAX_Y = 128;
+public const LEVEL_MAX_Y = 252;
 
 public const LEVEL_LESS_Y = 0;
 
@@ -53,9 +53,7 @@ public $sotw;
 
 public $eotw;
 
-public function onLoad(): void {
-
-}
+public function onLoad(): void {}
 
 public function onEnable(){
 self::$instance = $this;
@@ -83,7 +81,7 @@ if(!is_file($this->getDataFolder() . "scoreboard.json")){
 $this->saveResource("scoreboard.json");
 }
 self::$yaml = new YamlProvider($this);
-//self::$sql = new MySQLProvider($this);
+self::$sql = new MySQLProvider($this);
 
 $config = $this->getConfig();
 $version = $config->getNested("version");
