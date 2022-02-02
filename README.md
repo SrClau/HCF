@@ -3,7 +3,10 @@
 </p>
 
 # IMPORTANT
-This plugin is no longer developed and/or updated, if you want to know more information about it, read in detail the announcement in the Issues section 
+
+![Important](https://img.shields.io/badge/This%20plugin%20is%20no%20longer%20developed%20and/or%20updated-FB503B?style=for-the-badge&logo=important&logoColor=black)<br/>
+![Important](https://img.shields.io/badge/if%20you%20want%20to%20know%20more%20information%20about%20it-FB503B?style=for-the-badge&logo=important&logoColor=black)<br/>
+![Important](https://img.shields.io/badge/read%20in%20detail%20the%20announcement%20in%20the%20Issues%20section-FB503B?style=for-the-badge&logo=important&logoColor=black)
 
 # Why created?
 The objective of creating this plugin was for the use or recreation of it, and especially created for the PMMP community
