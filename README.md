@@ -2,8 +2,8 @@
   <img src="resources/images/icon.png" />
 </p>
 
-# Notice
-This add-on is under development, if you want to test the add-on it is at you disposal  see crashes, instabilities, addictions malfunction, etc.
+# IMPORTANT
+This plugin is no longer developed and/or updated, if you want to know more information about it, read in detail the announcement in the Issues section 
 
 # Why created?
 The objective of creating this plugin was for the use or recreation of it, and especially created for the PMMP community
